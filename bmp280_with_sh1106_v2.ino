@@ -68,7 +68,7 @@ void displaySplashScreen()
   do {
     // Draw logo bitmap at (48, 16)
     u8g.drawBitmapP(2, 12, 40/8, 40, temp_logo);
-    u8g.drawBitmapP(42, 12, 40/8, 40, pres_logo);
+    u8g.drawBitmapP(40, 12, 40/8, 40, pres_logo);
     u8g.drawBitmapP(84, 12, 40/8, 40, alt_logo);
 
     u8g.setContrast(255); // Set the display brightness (0-255)
@@ -146,7 +146,7 @@ void loop()
     // Display Temperature
     u8g.drawStr(0, 28, "Temperature:");
     u8g.drawStr(69, 28, temperatureStr);
-    u8g.drawStr(107, 28, "\xB0""C");
+    u8g.drawStr(105, 28, "\xB0""C");
     
     // Display Pressure
     u8g.drawStr(0, 40, "Pressure:");
